@@ -1,2 +1,1 @@
-# starter_html
-CCP - HTML Code Complete
+# f23_common_project_starter_code
