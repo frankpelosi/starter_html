@@ -1,0 +1,35 @@
+nav {
+    padding: 30px;
+}
+nav ul{
+    text-align: center;
+}
+nav li {
+    padding: 0px 30px;
+    font-size: 30px;
+    display: inline;
+}
+nav a{
+    padding:10px;
+}
+.skip{
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: -20px;
+}
+.current{
+    border: solid #000000 2px;
+    font-weight: bold;
+}
+.skip a:focus{
+    position: relative;
+    top: 60px;
+    background-color: #ffffff;
+}
+.petcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+ 
+}
