@@ -1,24 +1,3 @@
-nav {
-    padding: 20px;
-}
-nav ul{
-    text-align: center;
-}
-nav li {
-    padding: 0px 0px;
-    font-size: 20px;
-    display: inline;
-}
-nav a{
-    padding:10px;
-    color: #000000;
-}
-
-.current{
-    text-decoration: underline;
-    font-weight: bold;
-}
-
 .skip a{
     background: white;
     left: 0;
@@ -36,187 +15,190 @@ nav a{
     top: 60px;
 }
 
-nav a{ 
-    text-decoration: none; 
-}
-
-
-h1{
-    font-size: 40px;
+nav ul{
     text-align: center;
-    padding: 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
+    padding: 20px 10px;
+}
+nav li{
+    display:inline;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #A9D3FF;
+    border: 2px solid #96C5F7;
+}
+nav a{
+    text-decoration: none;
     color: #000000;
 }
-h2{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 100;
-    padding: 10px;
+
+.current{
+    font-weight: 900;
+    text-decoration: underline;
     font-size: 25px;
+    color: #000000;
+}
+
+
+h1,h2,h3{
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+h1{
+    font-size: 40px;
+    padding: 20px 15px;
+    text-align: center;
+    background-color: #93ACB5;
+}
+h2{
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 15px;
     text-decoration: underline;
 }
 h3{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 10px;
+    font-size: 15;
+    padding: 20px 15px;
+
 }
+
 p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.3;
     font-size: 12px;
-    margin: 0 20px;
-}
-li{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-}
-ul{
-    list-style-position: inside;
-    margin: 30px;
+    padding: 15px;
 }
 ol{
     list-style-position: inside;
-    margin: 30px;
+    padding: 30px;
+}
+ul{
+    list-style-position: inside;
+    padding: 30px;
 }
 
 
-/* PETS CSS */
 
+
+
+
+
+
+/* ---------- PET ------------------- */
+
+
+.pet_item1,.pet_item2,.pet_item3,.pet_item4,.pet_item5,.pet_item6,.pet_item7,.pet_item8{
+    max-width: 320px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.pet_item4, .pet_item5, .pet_item6, .pet_item7{
+    min-height: 100%;
+    max-height: 100%;
+    text-align: center;
+    border: 10px solid #93ACB5;
+}
 .pet_container{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
-    justify-items: center;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    row-gap: 20px;
+    overflow:hidden;
+    justify-items: center;
 }
 .pet_item1{
-    text-align: center;
-    padding: 10px;
-    grid-area: 1/1/span 1 / span all;
-    overflow: hidden;
+    grid-area: 1/1/span 1/span all;
 }
-.pet_item1 h2{
-    padding: 10px;
-    margin: 10px;
+
+.pet_item1 img{
+    max-width: 300px;
+    border: 10px #93ACB5 solid;
+
 }
-.pet_item2 {
-    padding: 10px 10px;
-    margin: auto auto;
-    grid-area: 2/1/span 1 / span all;
+.pet_item2{
+    grid-area: 2/1/span 1/span all;
 }
-.pet_item3 {
-    text-align: center;
-    padding: 10px;
-    grid-area: 3/1/span 1 / span all;
+.pet_item3{
+    grid-area: 3/1/span 1/span all;
 }
 .pet_item4{
-    grid-area: 4/1/span 1 / span 1;
+    grid-area: 4/1/span 1/span 1;
 }
-.pet_item5{
-    grid-area: 4/2/span 1 / span 1;
-}
-.pet_item6{
-    grid-area: 5/1/span 1 / span 1;
-}
-.pet_item7{
-    grid-area: 5/2/span 1 / span 1;
-}
-.pet_item8{
-    grid-area: 6/1/span 1 / span all;
-}
-.pet_item8 h3{
-    padding: 10px;
-}
-.pet_container img{
+.pet_item4 img, .pet_item5 img,.pet_item6 video, .pet_item6 img,.pet_item7 img{
     object-fit: cover;
-    max-height: 200px;
-    min-height: 200px;
-}
-.pet_item1 img{
-    max-height: 300px;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
     min-height: 100%;
 }
-.pet_container video{
-    max-height: 200px;
+
+.pet_item5{
+    grid-area: 4/2/span 1/span 1;
 }
-div.pet_container {
-    border: solid #000000;
+.pet_item6{
+    grid-area: 5/1/span 1/span 1;
 }
-div.pet_item1,.pet_item2,.pet_item3,.pet_item4,.pet_item5,.pet_item6,.pet_item7,.pet_item8 {
-    border: solid #e51b1b;
+.pet_item7{
+    grid-area: 5/2/span 1/span 1;
+}
+.pet_item8{
+    grid-area: 6/1/span 1/span all;
 }
 
-/* TRAVEL CSS */
-div.travel_container{
-    border: solid #000000;
-}
-div.travel_item1,.travel_item2,.travel_item3,.travel_item4,.travel_item5,.travel_item6,.travel_item7,.travel_item8,.travel_item9,.travel_item10{
-    border: solid #e51b1b;
-}
 
-#maintravel img,video{
+
+
+
+
+
+
+/* ---------- Travel ------------------- */
+
+.travel_item1,.travel_item2,.travel_item3,.travel_item4,.travel_item5,.travel_grid{
+    max-width: 320px;
     object-fit: cover;
-    max-height: 200px;
-    min-height: 200px;
-    max-width: 200px;
-    min-width: 200px;
+    overflow: hidden;
 }
 
 .travel_container{
-display:grid;
-grid-template-columns: 1fr 1fr;
-column-gap: 10px;
-row-gap: 10px;
-justify-content: stretch;
-justify-items:stretch;
-margin: auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    overflow:hidden;
+    justify-items: center;
 }
 
 .travel_item1{
-    grid-area: 1/1/span 1/span all;
-    text-align: center;
+    grid-area: 1/1/span 1/span 2;
+
 }
 .travel_item2{
-    grid-area: 2/1/span 1/span 1;
+    grid-area: 2/1/span 1/ span 1;
+    border: 10px #93ACB5 solid;
 }
 .travel_item3{
-    grid-area: 2/2/span 1/span 1;
+    grid-area: 2/2/span 1/ span 1;
+    border: 10px #93ACB5 solid;
 }
+
 .travel_item4{
-    grid-area: 3/1/span 1/span all;
-    margin: inherit;
+    grid-area: 3/1/span 1/ span 2;
 }
 .travel_item5{
-    grid-area: 4/1/span 1/span all;
-    text-align:center;
+    grid-area: 4/1/span 1/ span 2;
 }
-
 .travel_grid{
+    grid-area: 5/1/span 1/ span 2;
     display: grid;
-    grid-area: 5/1/span all/span all;
-    grid-template-columns: 1fr 1fr;
-    padding: 30px;
-    border: solid slateblue 5px;
-    row-gap:10px;
-    column-gap:10px;
+    padding: 50px;
     justify-items:center;
     justify-content: center;
-
+    background-color: #A9D3FF
 }
-.travel_grid_top{
-    display: grid;
-    grid-area: 2/1/span 1/span all;
-    grid-template-columns: 1fr 1fr;
-    padding: 30px;
-    border: solid slateblue 5px;
-    row-gap:10px;
-    column-gap:10px;
-    justify-items: center;
-    justify-content: center;
 
-}
-.travel_grid img{
+.travel_grid img, .travel_grid video{
+    border: 10px #93ACB5 solid;
     object-fit: cover;
     max-height: 200px;
     min-height: 200px;
@@ -224,28 +206,48 @@ margin: auto;
     min-width: 200px;
 }
 
-
-figcaption{
+.travel_grid figcaption{
     max-width: 200px;
-    margin:inherit;
+    padding: 5px 0 30px 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 10px;
 }
-
-
-
-/* Recipes CSS */
-
-.recipe_container{
-    border:#000000 2px solid;
+.travel_item2,.travel_item3{
+    max-height: 200px;
+    min-height: 200px;
+}
+.travel_item2 img,.travel_item3 img{
+    object-fit: cover;
+    max-height: 200px;
+    min-height: 200px;
+    max-width: 100%;
+    min-width: 100%;
 }
 
-.recipe_item1,.recipe_item2,.recipe_item3,.recipe_item4,.recipe_item5,.recipe_item6,.recipe_item7,.recipe_item8,.recipe_item9,.recipe_item10{
-    border: #e51b1b 2px solid;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.recipe_item1,.recipe_item2,.recipe_item3,.recipe_item4,.recipe_item5,.recipe_item6,.recipe_item7,.recipe_item8, .recipe_item9,.recipe_item10{
+    max-width: 320px;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .recipe_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
 .recipe_item1{
     grid-area: 1/1/1/span all;
@@ -253,8 +255,8 @@ figcaption{
 }
 .recipe_item2{
     grid-area: 2/1/span 1/span all;
-    margin-left:auto;
-    margin-right:auto;
+    padding: 0 10px;
+    margin: 0 auto;
 }
 .recipe_item3{
     grid-area: 3/1/span 1/span all;
@@ -262,40 +264,42 @@ figcaption{
 }
 .recipe_item4{
     grid-area: 4/1/span 1/span all;
-    padding: 0 30%;
+    padding: 0 10px;
 }
 .recipe_item5{
-    grid-area: 5/1/span 1/span 1;
+    grid-area: 5/1/span 1/span all;
     text-align: center;
 }
 .recipe_item6{
-    grid-area: 6/1/span 1/span 1;
+    grid-area: 6/1/span 1/span all;
+
 }
 .recipe_item7{
-    grid-area: 5/2/span 1/span 1;
+    grid-area: 7/1/span 1/span all;
     text-align: center;
+
 }
 .recipe_item8{
-    grid-area: 6/2/span 1/span 1;
+    grid-area: 8/1/span 1/span all;
+
 }
 .recipe_item9{
-    grid-area: 7/1/span 1/span all;
+    grid-area: 9/1/span 1/span all;
     text-align: center;
 }
 .recipe_item10{
-    grid-area: 8/1/span 1/span all;
+    grid-area: 10/1/span 1/span all;
     display: grid;
     grid-template-columns: 1fr;
-    padding: 30px;
-    border: solid slateblue 5px;
+    padding: 50px;
     row-gap: 10px;
     column-gap: 10px;
     justify-items: center;
     justify-content: center;
+    background-color: #96C5F7;
 }
 
 .recipe_item10 img{
-    border: solid #e51b1b 2px;
     object-fit: cover;
     max-height: 200px;
     min-height: 200px;
@@ -313,10 +317,30 @@ figcaption{
     min-width: 200px;
 }
 
+#mainrecipes img{
+    object-fit: cover;
+    max-height: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    min-width: 200px;
+    border: 10px #93ACB5 solid;
+    margin: 10px;
+}
+
+#mainrecipes ol{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+#mainrecipes ul{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+
 @media screen and (prefers-reduced-motion: reduce){
     .skip a{
-        -webkit-transition: none; /* sets to default setting */
-        transition: none;        /* sets to default setting */
+        -webkit-transition: none;
+        transition: none;        
        }
     .travel_item2{
         visibility: hidden;
@@ -326,6 +350,6 @@ figcaption{
         visibility: hidden;
     }
     .travel_item3{
-        grid-area: 1/1/span 1/span all;
+        grid-area: 2/1/span 1/span all;
     }
 }
