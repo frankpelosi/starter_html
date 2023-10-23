@@ -129,12 +129,6 @@ ul{
     height: 100%;
 }
 
-.pet_item6 video{
-    object-fit: contain;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
-
 .pet_item5{
     grid-area: 4/2/span 1/span 1;
 }
