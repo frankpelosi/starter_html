@@ -84,7 +84,8 @@ ul{
 
 /* ---------- PET ------------------- */
 
-.pet_item1,.pet_item2,.pet_item3,.pet_item4,.pet_item5,.pet_item6,.pet_item7,.pet_item8{
+
+.pet_item1,.pet_item2,.pet_item3,.pet_item4,.pet_item5,.pet_item6,.pet_item7,.pet_item8,.pet_imagegrid{
     max-width: 320px;
     object-fit: cover;
     overflow: hidden;
@@ -120,23 +121,30 @@ ul{
 .pet_item3{
     grid-area: 3/1/span 1/span all;
 }
+.pet_image_grid{
+    grid-area: 4/1/span 2/span all;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
 .pet_item4{
-    grid-area: 4/1/span 1/span 1;
+    grid-area: 1/1/span 1/span 1;
 }
 .pet_item4 img, .pet_item5 img,.pet_item6 video, .pet_item6 img,.pet_item7 img{
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
 }
 
 .pet_item5{
-    grid-area: 4/2/span 1/span 1;
+    grid-area: 1/2/span 1/span 1;
 }
 .pet_item6{
-    grid-area: 5/1/span 1/span 1;
+    grid-area: 2/1/span 1/span 1;
 }
 .pet_item7{
-    grid-area: 5/2/span 1/span 1;
+    grid-area: 2/2/span 1/span 1;
 }
 .pet_item8{
     grid-area: 6/1/span 1/span all;
@@ -251,41 +259,42 @@ ul{
     text-align: center;
 }
 .recipe_item2{
-    grid-area: 2/1/span 1/span all;
+    grid-area: 4/1/span 1/span all;
     padding: 0 10px;
-    margin: 0 auto;
+    margin: 0 15px;
+    font-size: 12px;
 }
 .recipe_item3{
     grid-area: 3/1/span 1/span all;
     margin: 0 auto;
 }
 .recipe_item4{
-    grid-area: 4/1/span 1/span all;
+    grid-area: 5/1/span 1/span all;
     padding: 0 10px;
 }
 .recipe_item5{
-    grid-area: 5/1/span 1/span all;
+    grid-area: 6/1/span 1/span all;
     text-align: center;
 }
 .recipe_item6{
-    grid-area: 6/1/span 1/span all;
+    grid-area: 7/1/span 1/span all;
 
 }
 .recipe_item7{
-    grid-area: 7/1/span 1/span all;
+    grid-area: 8/1/span 1/span all;
     text-align: center;
 
 }
 .recipe_item8{
-    grid-area: 8/1/span 1/span all;
+    grid-area: 9/1/span 1/span all;
 
 }
 .recipe_item9{
-    grid-area: 9/1/span 1/span all;
+    grid-area: 10/1/span 1/span all;
     text-align: center;
 }
 .recipe_item10{
-    grid-area: 10/1/span 1/span all;
+    grid-area: 11/1/span 1/span all;
     display: grid;
     grid-template-columns: 1fr;
     padding: 50px;
@@ -334,10 +343,11 @@ ul{
 }
 
 
+
 @media screen and (prefers-reduced-motion: reduce){
     .skip a{
-        -webkit-transition: none;
-        transition: none;        
+        -webkit-transition: none; 
+        transition: none;       
        }
     .travel_item2{
         visibility: hidden;
@@ -347,6 +357,8 @@ ul{
         visibility: hidden;
     }
     .travel_item3{
-        grid-area: 2/1/span 1/span all;
+        grid-area: 1/1/span 1/span all;
+        margin: 20px
     }
 }
+
