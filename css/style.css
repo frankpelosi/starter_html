@@ -358,7 +358,7 @@ ul{
         visibility: hidden;
     }
     .travel_item3{
-        grid-area: 1/1/span 1/span all;
+        grid-area: 2/1/span 1/span all;
         margin: 20px
     }
 }
